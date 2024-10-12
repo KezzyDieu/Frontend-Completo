@@ -1,0 +1,79 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.menu{
+    color: black;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+}
+
+
+th {
+    background-color: #007BFF; 
+    color: white; 
+    padding: 10px;
+    border: 1px solid black; 
+}
+
+
+td {
+    padding: 10px; 
+    border: 1px solid black; 
+}
+
+
+a {
+    color: #007BFF;
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+.noticia-container {
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.titulo-noticia {
+    font-size: 2em; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.descripcion-noticia {
+    font-size: 1.2em; 
+    color: #555;
+    margin-bottom: 20px; 
+}
+
+.universidad-table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.table-header {
+    background-color: #007BFF; 
+    color: white; 
+    padding: 10px;
+    border: 1px solid black; 
+}
+
+.table-data {
+    padding: 10px; 
+    border: 1px solid black; 
+}
+
+.error-message {
+    color: red; 
+    font-weight: bold; 
+}
