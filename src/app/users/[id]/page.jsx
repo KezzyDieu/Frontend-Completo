@@ -1,5 +1,5 @@
 import axios from "axios";
-import '../estilos.css'; // Asegúrate de que la ruta sea correcta
+import '../estilos.css'; 
 
 async function usuariosApp() {
     const url = "https://jsonplaceholder.typicode.com/users";
@@ -17,7 +17,7 @@ export default async function UsuarioDetalle({ params }) {
             <h1 className="titulo-usuario">Detalles del Usuario</h1>
             {usuario ? (
                 <>
-                    {/* Información General del Usuario */}
+                    
                     <h2>Información General</h2>
                     <table className="detalle-table">
                         <thead>
@@ -46,7 +46,7 @@ export default async function UsuarioDetalle({ params }) {
                         </tbody>
                     </table>
 
-                    {/* Dirección del Usuario */}
+
                     <h2>Dirección del Usuario</h2>
                     <table className="detalle-table">
                         <thead>
@@ -71,7 +71,7 @@ export default async function UsuarioDetalle({ params }) {
                         </tbody>
                     </table>
 
-                    {/* Información de la Compañía */}
+                    
                     <h2>Compañía del Usuario</h2>
                     <table className="detalle-table">
                         <thead>

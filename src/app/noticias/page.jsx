@@ -1,7 +1,7 @@
-import Link from "next/link"; // Importar Link de Next.js
-import Boton from "@/components/boton"; // Importar el componente Boton
+import Link from "next/link"; 
+import Boton from "@/components/boton"; 
 import axios from "axios";
-import '../estilos.css'; // Asegúrate de que la ruta sea correcta
+import '../estilos.css'; 
 
 
 async function universidadesMexico() {
@@ -14,13 +14,13 @@ export default async function Noticias() {
     const universidades = await universidadesMexico();
 
     return (
-        <div className="noticias-container"> {/* Clase para el contenedor principal */}
-            <h1 className="titulo-noticias">Noticias</h1> {/* Clase para el título */}
-            <p className="descripcion-noticias">Estas en noticias</p> {/* Clase para la descripción */}
-            <table className="noticias-table"> {/* Clase para la tabla de universidades */}
+        <div className="noticias-container"> 
+            <h1 className="titulo-noticias">Noticias</h1> 
+            <p className="descripcion-noticias">Estas en noticias</p> 
+            <table className="noticias-table"> 
                 <thead>
                     <tr>
-                        <th className="table-header">Id</th> {/* Clase para los encabezados */}
+                        <th className="table-header">Id</th> 
                         <th className="table-header">Universidad</th>
                         <th className="table-header">Sitio web</th>
                     </tr>
@@ -28,9 +28,9 @@ export default async function Noticias() {
                 <tbody>
                     {universidades.map((universidad, i) => (
                         <tr key={i}>
-                            <td className="table-data">{i + 1}</td> {/* Clase para los datos de la tabla */}
+                            <td className="table-data">{i + 1}</td>
                             <td className="table-data">
-                                <Link href={`/noticias/${i + 1}`} className="link-universidad">{universidad.name}</Link> {/* Clase para el enlace */}
+                                <Link href={`/noticias/${i + 1}`} className="link-universidad">{universidad.name}</Link>
                             </td>
                             <td className="table-data">{universidad.web_pages[0]}</td>
                         </tr>
