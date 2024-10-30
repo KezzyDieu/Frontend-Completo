@@ -1,7 +1,7 @@
 "use client"
 
 function nueva() {
-    console.log("NUeva noticia")
+    console.log("Nueva noticia")
 }
 
 export default function Boton() {

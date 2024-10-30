@@ -12,32 +12,24 @@ export default function Menu() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" href="/">Home</Link>
                             </li>
                             <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" href="/usuarios/mostrar">Usuarios</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" href="/chat">Chat</Link>
+                                <Link className="nav-link active" aria-current="page" href="/usuarios/nuevo">Agregar Usuario</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" href="/noticias">Noticias</Link>
+                                <Link className="nav-link active" aria-current="page" href="/productos/mostrar">Productos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" href="/users">Usuarios</Link>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <Link className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </Link>
-                                <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" href="/">Action</Link></li>
-                                    <li><Link className="dropdown-item" href="/">Another action</Link></li>
-                                    <li><hr className="dropdown-divider" /></li>
-                                    <li><Link className="dropdown-item" href="/">Something else here</Link></li>
-                                </ul>
+                                <Link className="nav-link active" aria-current="page" href="/productos/nuevo">Agregar Producto</Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/" className="nav-link disabled" aria-disabled="true">Disabled</Link>
+                                <Link className="nav-link active" aria-current="page" href="/ventas/mostrar">Ventas</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link active" aria-current="page" href="/ventas/nuevo">Crear Venta</Link>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
